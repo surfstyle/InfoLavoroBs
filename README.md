@@ -11,7 +11,7 @@ Generate a notification (email) of all the lines that contains these keys*
   
 
 ## What is doing?
-- A personalized web scraping script for the website
+- A personalized web scraping script for the website (jobs on page 'Concorsi')
 - A cron is used for starting the script (one time a week)  
 - Scrap all the interested data on the webpage and save it on files  
 - Search the files for the lines that match the keys
@@ -51,9 +51,17 @@ APP_SMTP_USERNAME=myaddress@gmail.com
 APP_SMTP_PASSWORD=xytzn aabb ccdd eeff
 </pre>
   
-  
+
 #### Personalized the keywords in the search
 Modify the list in *searchkeywords.py*
+  
+
+#### Run a test
+<pre>
+cd /home/user/my-home-script/
+python3 start.py
+</pre>
+  
   
 #### Personalize your cron file
 *crontab -e*
