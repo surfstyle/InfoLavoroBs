@@ -21,6 +21,13 @@ Generate a notification (email) of all the lines that contains these keys*
 
 
 ## How to use it
+#### Dependencies
+Install Selenium to simulate a browser
+<pre>
+pip install selenium	
+</pre>
+  
+
 #### Create a .env file
 Create in the main folder a file .env  
 like this  
@@ -43,12 +50,13 @@ APP_SOGGETTO=[HomeSrv] Concorsi Informalavoro BS
 APP_SMTP_USERNAME=myaddress@gmail.com
 APP_SMTP_PASSWORD=xytzn aabb ccdd eeff
 </pre>
-
+  
+  
 #### Personalized the keywords in the search
-Modify the list in searchkeywords.py
+Modify the list in *searchkeywords.py*
   
 #### Personalize your cron file
-crontab -e
+*crontab -e*
   
 <pre>
 # Script personalizzato per pagina "Informagiovani concorsi comune Brescia"
