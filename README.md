@@ -1,18 +1,18 @@
 
 # InfoLavoroBs
-Web scaping notification for "https://informalavoro.comune.brescia.it"  
-The site is updated every week (friday) with a working bulletin  
-The goal is retriving the jobs of the bulletin that match a list of personal keywords.  
+Web scraping and notification for "https://informalavoro.comune.brescia.it"  
+The site is updated every week (es. friday) with a working bulletin  
+The goal is having a notification of the jobs from the bulletin that match the list of personal keywords.  
   
-Example:
-my-list-of-keywords=['informatica', 'data science', 'analista']  
-Generate a notification (email) of all the lines that contains these keys
+Example:  
+*my-keywords=['informatica', 'data science', 'analista']  
+Generate a notification (email) of all the lines that contains these keys*
   
   
 
 ## What is doing?
 - A personalized web scraping script for the website
-- A cron is used for starting the script when there is a change in the webpage (one time a week)  
+- A cron is used for starting the script (one time a week)  
 - Scrap all the interested data on the webpage and save it on files  
 - Search the files for the lines that match the keys
 - Notify with an email the lines with changes  
