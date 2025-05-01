@@ -25,7 +25,7 @@ Generate a notification (email) of all the lines that contains these keys
 Create in the main folder a file .env  
 like this  
 
-<pre> ```dotenv 
+<pre>
 # .env
 
 # General
@@ -42,14 +42,18 @@ APP_MITTENTE=myaddress@gmail.com
 APP_SOGGETTO=[HomeSrv] Concorsi Informalavoro BS
 APP_SMTP_USERNAME=myaddress@gmail.com
 APP_SMTP_PASSWORD=xytzn aabb ccdd eeff
-``` </pre>
+</pre>
 
 ### Personalized the keywords in the search
 Modify the list in searchkeywords.py
   
 ### Personalize your cron file
-'crontab -e'
+<pre>
+crontab -e
+</pre>
 
+<pre>
 # Script personalizzato per pagina "Informagiovani concorsi comune Brescia"
 30 00 * * 6 python3 /home/headless/Scripts/InfoLavoroBs/start.py
+</pre>
 
