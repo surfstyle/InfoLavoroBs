@@ -28,7 +28,6 @@ pip install selenium
 </pre>
   
   
-
 #### Create a .env file
 Create in the main folder a file .env  
 like this  
@@ -53,12 +52,10 @@ APP_SMTP_PASSWORD=xytzn aabb ccdd eeff
 </pre>
   
   
-
 #### Personalized the keywords in the search
 Modify the list in *searchkeywords.py*
   
   
-
 #### Run a test
 <pre>
 cd /home/user/my-home-script/
@@ -66,13 +63,11 @@ python start.py
 </pre>
   
   
-
 #### Personalize your cron file
 *crontab -e*
   
 <pre>
-30 00 * * 6 python3 /home/headless/Scripts/InfoLavoroBs/start.py
+30 00 * * 6 python /home/headless/Scripts/InfoLavoroBs/start.py
 </pre>
-  
   
   
