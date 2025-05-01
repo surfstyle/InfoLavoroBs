@@ -1,0 +1,17 @@
+# Ignore Python cache
+__pycache__/
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.txt
+*.tmp
+*.swp
+
+# Ignore folders
+build/
+dist/
+
+# Ignore environment files
+.env
