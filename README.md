@@ -11,7 +11,7 @@ Generate a notification (email) of all the lines that contains these keys*
   
 
 ## What is doing?
-- A personalized web scraping script for the website (jobs on page 'Concorsi')
+- A personalized web scraping script for the website (at this time the jobs on page 'Concorsi')
 - A cron is used for starting the script (one time a week)  
 - Scrap all the interested data on the webpage and save it on files  
 - Search the files for the lines that match the keys
@@ -67,7 +67,6 @@ python3 start.py
 *crontab -e*
   
 <pre>
-# Script personalizzato per pagina "Informagiovani concorsi comune Brescia"
 30 00 * * 6 python3 /home/headless/Scripts/InfoLavoroBs/start.py
 </pre>
 
