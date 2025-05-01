@@ -1,11 +1,11 @@
 
 # InfoLavoroBs
-Web scaping notification for "https://informalavoro.comune.brescia.it"
-The site is updated every week (friday) with a working bulletin
-The goal is retriving the jobs of the bulletin that match a list of personal keywords.
+Web scaping notification for "https://informalavoro.comune.brescia.it"  
+The site is updated every week (friday) with a working bulletin  
+The goal is retriving the jobs of the bulletin that match a list of personal keywords.  
   
 Example:
-my-list-of-keywords=['informatica', 'data science', 'analista']
+my-list-of-keywords=['informatica', 'data science', 'analista']  
 Generate a notification (email) of all the lines that contains these keys
   
   
@@ -21,7 +21,7 @@ Generate a notification (email) of all the lines that contains these keys
 
 
 ## How to use it
-### Create a .env file
+#### Create a .env file
 Create in the main folder a file .env  
 like this  
 
@@ -44,14 +44,12 @@ APP_SMTP_USERNAME=myaddress@gmail.com
 APP_SMTP_PASSWORD=xytzn aabb ccdd eeff
 </pre>
 
-### Personalized the keywords in the search
+#### Personalized the keywords in the search
 Modify the list in searchkeywords.py
   
-### Personalize your cron file
-<pre>
+#### Personalize your cron file
 crontab -e
-</pre>
-
+  
 <pre>
 # Script personalizzato per pagina "Informagiovani concorsi comune Brescia"
 30 00 * * 6 python3 /home/headless/Scripts/InfoLavoroBs/start.py
