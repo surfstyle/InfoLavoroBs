@@ -1,6 +1,6 @@
 
 # InfoLavoroBs
-Web scraping and notification for [https://informalavoro.comune.brescia.it](https://informalavoro.comune.brescia.it)
+Web scraping and notification for [https://informalavoro.comune.brescia.it](https://informalavoro.comune.brescia.it)  
 The site is updated every week (es. friday) with a working bulletin  
 The goal is having a notification of the jobs from the bulletin that match a list of personal keywords.  
   
