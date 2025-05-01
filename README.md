@@ -11,10 +11,10 @@ Generate a notification (email) of all the lines that contains these keys*
   
 
 ## What is doing?
-- A personalized web scraping script for the website (at this time the jobs on page 'Concorsi')
+- A personalized web scraping script for the website (at this time are jobs on page 'Concorsi')
 - A cron is used for starting the script (one time a week)  
-- Scrap all the interested data on the webpage and save it on files  
-- Search the files for the lines that match the keys
+- Scrap all the interested data on the webpage and save it on file  
+- Search the file for the lines that match the keys and save them  
 - Notify with an email the lines with changes  
 
 
@@ -24,7 +24,7 @@ Generate a notification (email) of all the lines that contains these keys*
 #### Dependencies
 Install Selenium to simulate a browser
 <pre>
-pip install selenium	
+pip install selenium
 </pre>
   
   
