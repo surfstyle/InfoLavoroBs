@@ -14,7 +14,14 @@ FILE_OUTPUT = os.getenv('APP_FILE_OUTPUT')
 FILE_PATH_IN =  PATH + FILE_INPUT
 FILE_PATH_OUT = PATH + FILE_OUTPUT
 # Custom search! Lista delle parole da cercare
-SEARCH_KEYWORDS = ["informat", "programmat", "develop", "sistemi", "system", "ict", "telecomu", "computer", "data scien", "helpdesk", "help-desk", "help desk", "informaz"]
+SEARCH_KEYWORDS = [
+    "informat", "informaz", 
+    "computer", "telecomu", "ict", 
+    "programmat", "programmaz", "develop", "python"
+    "sistemi", "system", "database"
+    "helpdesk", "help-desk", "help desk", 
+    "data scien", "data anal", "analista dat", "analista"
+    ]
 
 def cerca_e_salva_righe(file_input, file_output, parole_da_cercare):
     # Converti tutte le parole da cercare in minuscolo

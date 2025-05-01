@@ -1,15 +1,55 @@
 
 # InfoLavoroBs
 Web scaping notification for "https://informalavoro.comune.brescia.it"
+The site is updated every week (friday) with a working bulletin
+The goal is retriving the jobs of the bulletin that match a list of personal keywords.
+  
+Example:
+my-list-of-keywords=['informatica', 'data science', 'analista']
+Generate a notification (email) of all the lines that contains these keys
+  
+  
 
-## What do this
-Web scrapting personalized for a single webpage  
-A cron is used to scrap when webpage change (es one a week)  
-Scrap all the interested data of the webpage  
-Save on files  
-Make search on the lines with some keywords (params of interest)  
-Notify with email the lines with change  
+## What is doing?
+- A personalized web scraping script for the website
+- A cron is used for starting the script when there is a change in the webpage (one time a week)  
+- Scrap all the interested data on the webpage and save it on files  
+- Search the files for the lines that match the keys
+- Notify with an email the lines with changes  
 
 
 
+
+## How to use it
+### Create a .env file
+Create in the main folder a file .env  
+like this  
+
+<pre> ```dotenv 
+# .env
+
+# General
+APP_PATH=/home/headless/Scripts/InfoLavoroBs/
+APP_URL=https://informalavoro.comune.brescia.it
+APP_FILE_NAME=bollettino-informalavorobs-concorsi.txt
+APP_FILE_OUTPUT=bollettino-informalavorobs-risultati.txt
+
+# Email
+APP_SMTP_SERVER=smtp.gmail.com
+APP_SMTP_PORT=587
+APP_DESTINATARIO=destination@gmail.com
+APP_MITTENTE=myaddress@gmail.com
+APP_SOGGETTO=[HomeSrv] Concorsi Informalavoro BS
+APP_SMTP_USERNAME=myaddress@gmail.com
+APP_SMTP_PASSWORD=xytzn aabb ccdd eeff
+``` </pre>
+
+### Personalized the keywords in the search
+Modify the list in searchkeywords.py
+  
+### Personalize your cron file
+'crontab -e'
+
+# Script personalizzato per pagina "Informagiovani concorsi comune Brescia"
+30 00 * * 6 python3 /home/headless/Scripts/InfoLavoroBs/start.py
 
